@@ -978,7 +978,7 @@ $size-header-pad: 1em;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight-bold);
-		height: 3.15em;
+		height: 1.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
 		min-width: 10em;
@@ -1079,7 +1079,7 @@ $size-header-pad: 1em;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								150%;
 		color: _palette(accent2, fg);
-		height: 100%;
+		height: 50%;
 		left: 0;
 		padding: ($size-header-pad * 0.1) $size-header-pad;
 		position: fixed;
@@ -1367,7 +1367,7 @@ $size-header-pad: 1em;
 
 	@include breakpoint('<=large') {
 
-		$size-header-width: 30%;
+		$size-header-width: 5%;
 		$size-header-pad: 1em;
 
 		/* Header */

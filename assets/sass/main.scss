@@ -1160,9 +1160,9 @@ $size-header-pad: 1em;
 
 	#main {
 		margin-left: $size-header-width;
-		max-width: 50em + $size-header-pad;
-		padding: ($size-header-pad * 1) $size-header-pad $size-header-pad $size-header-pad;
-		width: calc(100% - #{$size-header-width});
+		max-width: 5em + $size-header-pad;
+		padding: ($size-header-pad * 0) $size-header-pad $size-header-pad $size-header-pad;
+		width: calc(1% - #{$size-header-width});
 
 		> section {
 			border-top: solid 1px _palette(border);

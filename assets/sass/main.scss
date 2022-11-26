@@ -14,7 +14,7 @@
 */
 
 $size-header-width: 35%;
-$size-header-pad: 4em;
+$size-header-pad: 1em;
 
 // Breakpoints.
 
@@ -1510,7 +1510,7 @@ $size-header-pad: 4em;
 
 	@include breakpoint('<=small') {
 
-		$size-header-pad: 1.5em;
+		$size-header-pad: 0.5em;
 
 		/* Basic */
 
@@ -1575,11 +1575,11 @@ $size-header-pad: 4em;
 		/* Main */
 
 			#main {
-				padding: ($size-header-pad * 0.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
+				padding: ($size-header-pad * 0.5) $size-header-pad (($size-header-pad * 0.5) - _size(element-margin)) $size-header-pad;
 
 				> section {
-					margin: ($size-header-pad * 0.5) 0 0 0;
-					padding: ($size-header-pad * 0.5) 0 0 0;
+					margin: ($size-header-pad * 0.1) 0 0 0;
+					padding: ($size-header-pad * 0.1) 0 0 0;
 				}
 			}
 
@@ -1602,12 +1602,12 @@ $size-header-pad: 4em;
 
 	@include breakpoint('<=xsmall') {
 
-		$size-header-pad: 1.5em;
+		$size-header-pad: 0.5em;
 
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 0.7) $size-header-pad;
+				padding: ($size-header-pad * 0.1) $size-header-pad;
 
 				h1 {
 					br {

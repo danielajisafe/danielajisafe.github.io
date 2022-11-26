@@ -43,7 +43,7 @@ $size-header-pad: 4em;
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
+		font-size: 70%;
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -1186,8 +1186,8 @@ $size-header-pad: 4em;
 
 	.poptrox-popup {
 		@include vendor('box-sizing', 'content-box');
-		-webkit-tap-highlight-color: rgba(255,255,255,0);
-		background: #fff;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		background: rgb(255, 255, 255);
 		border-radius: _size(border-radius);
 		box-shadow: 0 0.1em 0.15em 0 rgba(0,0,0,0.15);
 		overflow: hidden;

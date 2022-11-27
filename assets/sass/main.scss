@@ -1356,9 +1356,9 @@ $size-header-pad: 1em;
 	@include breakpoint('<=xlarge') {
 
 		/* Basic */
-
+			// update font size here
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 10pt;
 			}
 
 	}

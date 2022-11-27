@@ -152,7 +152,7 @@ $size-header-pad: 1em;
 		font-style: italic;
 	}
 
-	// update paragraph margine here
+	// update Bio paragraph margine here
 	p {
 		margin: 0 0 _size(element-margin) 0;
 	}
@@ -1357,7 +1357,7 @@ $size-header-pad: 1em;
 	@include breakpoint('<=xlarge') {
 
 		/* Basic */
-			// update font size here
+			// update project font size here
 			body, input, select, textarea {
 				font-size: 4pt;
 			}

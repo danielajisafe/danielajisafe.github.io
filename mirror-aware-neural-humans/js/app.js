@@ -1,6 +1,8 @@
-
+// shih-yang&daniel: create lists of bibtex to uniquely lookup for citation rendering 
 $(document).ready(function() {
-    var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+    const id_lists = ["bibtex", "bibtex1"]
+    for (let i=0; i < id_lists.length; i++){
+    var editor = CodeMirror.fromTextArea(document.getElementById(id_lists[i]), {
         lineNumbers: false,
         lineWrapping: true,
         readOnly:true
@@ -8,7 +10,7 @@ $(document).ready(function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-    
+    }
 
 // var frameNumber = 0, // start video at frame 0
 //     // lower numbers = faster playback

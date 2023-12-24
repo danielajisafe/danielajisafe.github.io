@@ -1,6 +1,6 @@
 // shih-yang&daniel: create lists of bibtex to uniquely lookup for citation rendering 
 $(document).ready(function() {
-    const id_lists = ["bibtex", "bibtex1"]
+    const id_lists = ["bibtex", "bibtex1", "bibtex2"]
     for (let i=0; i < id_lists.length; i++){
     var editor = CodeMirror.fromTextArea(document.getElementById(id_lists[i]), {
         lineNumbers: false,

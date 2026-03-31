@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
 /*
 	Strata by HTML5 UP
@@ -100,10 +100,13 @@ input, select, textarea {
 	/* overall update here */
 	body, input, select, textarea {
 		color: #000000;
-		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 		font-size: 12pt;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.75em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
 
 		
 	}
@@ -126,7 +129,7 @@ input, select, textarea {
 
 	strong, b {
 		color: #787878;
-		font-weight: 400;
+		font-weight: 500;
 	}
 
 	em, i {
@@ -2371,6 +2374,141 @@ input, select, textarea {
 		overflow-x: auto;
 	}
 
+/* News (Peter Chen–style) */
+/* ref: https://peterchencyc.com/ */
+
+	.news-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25em;
+	}
+
+	.news-item {
+		display: grid;
+		grid-template-columns: 5.7em 1fr; /* 5.7em is the width of the date box */
+		column-gap: 1.5em;
+		align-items: start;
+	}
+
+	.news-date {
+		background: #0b66ff;
+		color: #fff;
+		font-weight: 700;
+		padding: 0.3em 0.75em;
+		border-radius: 0.35em;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
+		line-height: 1.2;
+		text-align: center;
+		white-space: nowrap;
+		width: 100%;
+	}
+
+	.news-text {
+		font-size: 1em;
+		line-height: 1.75em;
+	}
+
+	@media screen and (max-width: 736px) {
+		.news-item {
+			grid-template-columns: 1fr;
+			row-gap: 0.75em;
+		}
+	}
+
+/* Publications (Peter/Jon style) */
+/* refs: https://peterchencyc.com/ , https://jonbarron.info/ */
+
+	.pub-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+		margin: 0 0 2em 0;
+	}
+
+	.pub {
+		display: grid;
+		grid-template-columns: 9.5em 1fr;
+		column-gap: 1.25em;
+		align-items: start;
+	}
+
+	.pub-media img,
+	.pub-media video {
+		width: 100%;
+		display: block;
+		border-radius: 0.35em;
+	}
+
+	.pub-title {
+		font-weight: 600;
+		margin: 0 0 0.25em 0;
+	}
+
+	.pub-authors,
+	.pub-venue {
+		color: #666;
+		margin: 0.15em 0;
+	}
+
+	.pub-links a {
+		margin-right: 0.9em;
+	}
+
+	.pub-highlight {
+		color: #d23b08;
+	}
+
+	@media screen and (max-width: 736px) {
+		.pub {
+			grid-template-columns: 1fr;
+			row-gap: 0.75em;
+		}
+	}
+
+/* Projects (list style) */
+
+	.proj-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+		margin: 0 0 2em 0;
+	}
+
+	.proj {
+		display: grid;
+		grid-template-columns: 9.5em 1fr;
+		column-gap: 1.25em;
+		align-items: start;
+	}
+
+	.proj-media img,
+	.proj-media video {
+		width: 100%;
+		display: block;
+		border-radius: 0.35em;
+	}
+
+	.proj-title {
+		font-weight: 600;
+		margin: 0 0 0.25em 0;
+	}
+
+	.proj-desc {
+		color: #666;
+		margin: 0.15em 0;
+	}
+
+	.proj-links a {
+		margin-right: 0.9em;
+	}
+
+	@media screen and (max-width: 736px) {
+		.proj {
+			grid-template-columns: 1fr;
+			row-gap: 0.75em;
+		}
+	}
+
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
@@ -2570,8 +2708,8 @@ input, select, textarea {
 		}
 
 		.work-item p {
-			font-size: 0.8em;
-			line-height: 1.5em;
+			font-size: 1em;
+			line-height: 1.75em;
 			margin: 0;
 		}
 
@@ -2643,8 +2781,17 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 12.25em;
+			width: 16em;
+		aspect-ratio: 1 / 1;
+		overflow: hidden;
 		}
+
+	#header .image.avatar img {
+		height: 100%;
+		object-fit: cover;
+		object-position: center 20%;
+		border-radius: 50%;
+	}
 
 /* Footer */
 
